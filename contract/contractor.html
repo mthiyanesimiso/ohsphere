@@ -54,38 +54,27 @@
 
     <script type='text/javascript' src="../Scripts/Charts/fusioncharts.js"></script>
 
+
     <div id="topNav" style="display: none;">
-        <nav class="navbar navbar-expand-lg fixed-top shadow-sm navbar-light bg-light"  style="background: hsla(0, 0%, 95%, 0.9) !important;">
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm navbar-light bg-light" 
+            style="background: hsla(0, 0%, 95%, 0.9) !important;">
             <div class="container-md mx-lg-auto">
                 <a class="navbar-brand" href="#">
-                    <img src="../assets/img/logo1.png" height="40px" alt="OHSPHERE" >
+                    <img src="../assets/img/logo1.png" height="40px" alt="OHSPHERE">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class="nav-item dropdown"  id="trProgrammes">
-                            <a class="nav-link dropdown-toggle hover-underline-fs-i" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">TASKS</a>
+                            <a class="nav-link dropdown-toggle hover-underline-fs-i" href="#" id="dropdown05"
+                                data-bs-toggle="dropdown" aria-expanded="false">TASKS</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                <li ><a class="dropdown-item" href="./contractors-on-boarding.html">Contractor-On-Boarding</a></li>
-                                <li ><a class="dropdown-item" href="./contractors-on-evaluator.html" >Contractor Evaluation</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown"  id="trReport">
-                            <a class="nav-link dropdown-toggle hover-underline-fs-i" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">REPORTS</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown06">
-                                <li ><a class="dropdown-item" href="./on-boarding-report.html" >On-Boarding Report</a></li>
-                                <li ><a class="dropdown-item" href="./contractors-list-report.html" >Contractors List</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown"  id="trAdmin">
-                            <a class="nav-link dropdown-toggle hover-underline-fs-i" href="#" id="dropdown011" data-bs-toggle="dropdown" aria-expanded="false">ADMINISTRATION</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown06">
-                                <li><a class="dropdown-item" href="./view-user.html" >User Accounts</a></li>
+                                <li ><a class="dropdown-item" href="./contractor.html" >Contractor</a></li>
                             </ul>
                         </li>
 
@@ -107,54 +96,18 @@
 
     <aside id="sidebar" class="sidebar border-end" style="background-color: #357d28;">
         <div class="sidebar-nav align-content-center item-center text-center pb-3">
-            <img src="../assets/img/logo1.png" Width="200px" alt="DIGI-SAFE" class="scroll-reveal-top-delay-5" >
+            <img src="../assets/img/logo1.png" Width="200px" alt="DIGI-SAFE" class="scroll-reveal-top-delay-5">
         </div>
         <ul class="sidebar-nav border-top" id="sidebar-nav">
             <li class="nav-item  pt-3">
-                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-briefcase  fw-bolder"></i><span>TASKS</span><i
                         class="bi bi-chevron-down ms-auto"></i>
                 </a>
-                <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                <ul id="components-nav" class="nav-content" data-bs-parent="#sidebar-nav">
                     <li>
-                        <a  href="./contractors-on-boarding.html">
-                            <i class="bi bi-circle"></i><span>Contractor-On-Boarding</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a  href="./contractors-on-evaluator.html">
-                            <i class="bi bi-circle"></i><span>Contractor Evaluation</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-journal-text fw-bolder"></i><span>REPORTS</span><i
-                        class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a  href="./on-boarding-report.html">
-                            <i class="bi bi-circle"></i><span>On-Boarding Report</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a  href="./contractors-list-report.html">
-                            <i class="bi bi-circle"></i><span>Contractors List</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#forms-nav2" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-person"></i><span>ADMINISTRATION</span><i
-                        class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="forms-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a  href="./user-accounts.html">
-                            <i class="bi bi-circle"></i><span>User Accounts</span>
+                        <a  href="./contractor.html" class="active">
+                            <i class="bi bi-circle"></i><span>Contractor</span>
                         </a>
                     </li>
                 </ul>
