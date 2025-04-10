@@ -173,7 +173,7 @@
                                                     aria-labelledby="nav-QueryDetails-tab">
                                                     
                                                     <div class="row g-3">
-                                                        <div class="col-12 "  style="background-color: #2baaee; border-radius:5px;padding:1rem; color:white;">
+                                                        <div class="col-12"  style="background-color: #2baaee; border-radius:5px;padding:1rem; color:white;">
                                                         <div class="row g-3 pb-2" >
                                                             
                                                         <div class="col-12 pb-2" >
@@ -205,7 +205,7 @@
                                                             <asp:UpdatePanel ID="UpdatePanel15" >
                                                                 <ContentTemplate>
                                                                     <asp:HyperLink ID='HyperLink1' runat='server' Target='_blank'></asp:HyperLink>
-                                                                    <asp:FileUpload ID="FileUpload1" Class='form-control form-control-sm'  />
+                                                                    <input type="file" ID="FileUploadEmployeeIDPassportWorkPermitCopy" Class='form-control form-control-sm'  />
                                                                 </ContentTemplate>
                                                             </asp:UpdatePanel>
                                                         </div>
@@ -244,7 +244,7 @@
                                                                 <ContentTemplate>
                                                                     <asp:HyperLink ID='HyperLinkEmplEntryMedCert' runat='server'  Target='_blank'></asp:HyperLink>
                                                                     <input type="file" ID="FileUploadEmplEntryMedCert" Class='form-control form-control-sm'  />
-
+                                                                        <br> 
                                                                         <input type="date" ID="txtEmplEntryMedCert"  Class='form-control form-control-sm' placeholder="" Style="padding: 5px" AutoPostBack="True">
                                                                         <asp:CalendarExtender  TargetControlID="txtEmplEntryMedCert" PopupButtonID="txtEmplEntryMedCert" Format="yyyy MMMM dd"></asp:CalendarExtender>
                                                                         <asp:RequiredFieldValidator SetFocusOnError='true' ControlToValidate="txtEmplEntryMedCert" runat='server' ErrorMessage='missing' Display='Dynamic' Class='error' ValidationGroup='ContractorInfo'></asp:RequiredFieldValidator>
@@ -252,12 +252,12 @@
                                                             </asp:UpdatePanel>
                                                         </div>
                                                         <div class="col-12 col-sm-6 col-md-6">
-                                                            <div class="fw-bold">Employee Periodical Medical Certificates</div>
+                                                            <div class="fw-bold">Employee Periodical Medical Certificates*</div>
                                                             <asp:UpdatePanel ID="UpdatePanel2" >
                                                                 <ContentTemplate>
                                                                     <asp:HyperLink ID='HyperLinkEmplPerMedCert' runat='server'  Target='_blank'></asp:HyperLink>
                                                                     <input type="file" ID="FileUploadEmplPerMedCert" Class='form-control form-control-sm'  />
-
+                                                                    <br> 
                                                                         <input type="date" ID="txtEmplPerMedCert"  Class='form-control form-control-sm' placeholder="" Style="padding: 5px" AutoPostBack="True">
                                                                         <asp:CalendarExtender  TargetControlID="txtEmplPerMedCert" PopupButtonID="txtEmplPerMedCert" Format="yyyy MMMM dd"></asp:CalendarExtender>
                                                                         <asp:RequiredFieldValidator SetFocusOnError='true' ControlToValidate='txtEmplPerMedCert' runat='server' ErrorMessage='missing' Display='Dynamic' Class='error' ValidationGroup='ContractorInfo'></asp:RequiredFieldValidator>
@@ -270,8 +270,8 @@
                                                                 <ContentTemplate>
                                                                     <asp:HyperLink ID='HyperLinkEmplExMedCert' runat='server' Target='_blank'></asp:HyperLink>
                                                                     <input type="file" ID="FileUploadEmplExMedCert"  Class='form-control form-control-sm'  />
-
-                                                                        <input type="textbox" ID="txtEmplExMedCert"  Class='form-control form-control-sm' placeholder="" Style="padding: 5px" AutoPostBack="True">
+                                                                    <br> 
+                                                                        <input type="date" ID="txtEmplExMedCert"  Class='form-control form-control-sm' placeholder="" Style="padding: 5px" AutoPostBack="True">
                                                                         <asp:CalendarExtender  TargetControlID="txtEmplExMedCert" PopupButtonID="txtEmplExMedCert" Format="yyyy MMMM dd"></asp:CalendarExtender>
                                                                         <asp:RequiredFieldValidator SetFocusOnError='true' ControlToValidate='txtEmplExMedCert' runat='server' ErrorMessage='missing' Display='Dynamic' Class='error' ValidationGroup='ContractorInfo'></asp:RequiredFieldValidator>
                                                              </ContentTemplate>
@@ -291,7 +291,7 @@
                                                             <div class="fw-bold">Employee ID/Passport Number*</div>
                                                             <asp:UpdatePanel ID="UpdatePanel8" >
                                                                 <ContentTemplate>
-                                                                    <input type="textbox" ID="TextBox6"  Class='form-control form-control-sm' placeholder="Enter Employee ID/Passport Number" Style="padding: 5px">
+                                                                    <input type="number" ID="TextBox6"  Class='form-control form-control-sm' placeholder="Enter Employee ID/Passport Number" Style="padding: 5px">
                                                                     <asp:RequiredFieldValidator SetFocusOnError='true' ControlToValidate='txtContractorName' runat='server' ErrorMessage='missing' Display='Dynamic' Class='text-muted small' ValidationGroup='ContractorInfo'></asp:RequiredFieldValidator>
                                                                 </ContentTemplate>
                                                             </asp:UpdatePanel>
@@ -300,8 +300,8 @@
                                                             <div class="fw-bold">Employee ID/Passport/Work Permit Copy*</div>
                                                             <asp:UpdatePanel ID="UpdatePanel11" >
                                                                 <ContentTemplate>
-                                                                    <asp:HyperLink ID='HyperLink5' runat='server' Target='_blank'></asp:HyperLink>
-                                                                    <input type="file"  ID="FileUpload5"  Class='form-control form-control-sm'  />
+                                                                    <asp:HyperLink ID='HyperLinkEmployeeIDPassportWorkPermitCopy' runat='server' Target='_blank'></asp:HyperLink>
+                                                                    <input type="file" ID="FileUploadEmployeeIDPassportWorkPermitCopy" Class='form-control form-control-sm'  />
                                                                 </ContentTemplate>
                                                             </asp:UpdatePanel>
                                                         </div>
@@ -329,11 +329,11 @@
                                                                                 (Signed by both parties)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="ContractorGeneralDetailsSection37"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="ContractorGeneralDetailsSection37"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -343,11 +343,11 @@
                                                                                 CR7(2) C (v)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="ContractorGeneralDetailsContractorAppointment"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="ContractorGeneralDetailsContractorAppointment"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -372,11 +372,11 @@
                                                                                 (Signed by both parties)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="LegalRequirementsSection37"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="LegalRequirementsSection37"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -386,11 +386,11 @@
                                                                                 CR7(2) C (v)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="LegalRequirementsContractorAppointment"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="LegalRequirementsContractorAppointment"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -415,11 +415,11 @@
                                                                                 (Signed by both parties)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="StaffDocumentsSection37"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="StaffDocumentsSection37"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -429,11 +429,11 @@
                                                                                 CR7(2) C (v)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="StaffDocumentsContractorAppointment"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="StaffDocumentsContractorAppointment"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -458,11 +458,11 @@
                                                                                 (Signed by both parties)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="TrainingRecordsAndCompetenciesSection37"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="TrainingRecordsAndCompetenciesSection37"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -472,11 +472,11 @@
                                                                                 CR7(2) C (v)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="TrainingRecordsAndCompetenciesContractorAppointment"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="TrainingRecordsAndCompetenciesContractorAppointment"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -500,11 +500,11 @@
                                                                                 (Signed by both parties)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AppointmentLettersSection37"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AppointmentLettersSection37"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -514,17 +514,57 @@
                                                                                 CR7(2) C (v)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AppointmentLettersContractorAppointment"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AppointmentLettersContractorAppointment"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="row" style="background-color: #2baaee; border-radius:5px;padding:1rem; color:white;">
+                                                                <div class="col-12 pb-2 border-bottom mb-3">
+                                                                    <span class="fw-bolder">Injuries on Duty (IOD)/Incidents/Unsafe Acts & Conditions</span>
+                                                                </div>
+                                                                <div class="col-12 small">
+                                                                    <div class="row g-3">
+                                                                        <div class="col-12 col-sm-6 col-md-6">
+                                                                            <div class="fw-bold">Section 37(2) Agreement
+                                                                                (Signed by both parties)</div>
+                                                                                <div class="row g-3">
+                                                                                    <div class="col-3">
+                                                                                        <input type="radio" id="chkHost" name="InjuriesOnDutySection37"/>
+                                                                                        <span>Yes</span>
+                                                                                    </div>
+                                                                                    <div class="col-3">
+                                                                                        <input type="radio" id="chkHost" name="InjuriesOnDutySection37"/>
+                                                                                        <span>No</span>                                                                                  
+                                                                                    </div>                                            
+                                                                                </div> 
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-6 col-md-6">
+                                                                            <div class="fw-bold">Contractor Appointment CR7(2) C (v)
+                                                                                <div class="row g-3">
+                                                                                    <div class="col-3">
+                                                                                        <input type="radio" id="chkHost" name="InjuriesOnDutyContractorAppointment"/>
+                                                                                        <span>Yes</span>
+                                                                                    </div>
+                                                                                    <div class="col-3">
+                                                                                        <input type="radio" id="chkHost" name="InjuriesOnDutyContractorAppointment"/>
+                                                                                        <span>No</span>                                                                                  
+                                                                                    </div>                                            
+                                                                                </div> 
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                             </div>
                                                         </div>
 
@@ -541,11 +581,11 @@
                                                                                 (Signed by both parties)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AuditsSection37"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AuditsSection37"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -554,11 +594,11 @@
                                                                             <div class="fw-bold">Contractor Appointment
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AuditsContractorAppointment"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="AuditsContractorAppointment"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
@@ -583,11 +623,11 @@
                                                                             </div>
                                                                             <div class="row g-3">
                                                                                 <div class="col-3">
-                                                                                    <input type="radio" id="chkHost" name="type"/>
+                                                                                    <input type="radio" id="chkHost" name="OtherSection37"/>
                                                                                     <span>Yes</span>
                                                                                 </div>
                                                                                 <div class="col-3">
-                                                                                    <input type="radio" id="chkHost" name="type"/>
+                                                                                    <input type="radio" id="chkHost" name="OtherSection37"/>
                                                                                     <span>No</span>                                                                                  
                                                                                 </div>                                            
                                                                             </div>                                                                             
@@ -597,11 +637,11 @@
                                                                                 CR7(2) C (v)</div>
                                                                                 <div class="row g-3">
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="OtherContractorAppointment"/>
                                                                                         <span>Yes</span>
                                                                                     </div>
                                                                                     <div class="col-3">
-                                                                                        <input type="radio" id="chkHost" name="type"/>
+                                                                                        <input type="radio" id="chkHost" name="OtherContractorAppointment"/>
                                                                                         <span>No</span>                                                                                  
                                                                                     </div>                                            
                                                                                 </div> 
